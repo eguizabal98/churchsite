@@ -1,0 +1,13 @@
+// FOR SINGLE POSTS SUCH AS BLOG POST, SERMONS, EVENTS, AND MINISTRIES ============================== //
+.single {
+  &__metas {
+    margin: calc(#{$default-margin} * 2) 0; // 4rem 0;
+  }
+
+  &__content {
+    margin-bottom: 4rem;
+    @include respond(lg) {
+      margin-bottom: 0;
+    }
+  }
+}

@@ -1,0 +1,11 @@
+// ALL EVENTS (EVENTS PAGE) ============================ //
+.all-events {
+  &__events {
+    margin-bottom: 4rem;
+  }
+
+  .pagination {
+    // Centering
+    justify-content: center;
+  }
+}

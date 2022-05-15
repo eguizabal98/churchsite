@@ -1,0 +1,146 @@
+// CAROUSELS ============================= //
+
+// Arrow navigation
+.owl-carousel .owl-nav button {
+  &.owl-prev,
+  &.owl-next {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 20;
+    width: 5rem;
+    height: 5rem;
+    font-size: 3rem;
+    background-color: $accent-color;
+    color: $white-color;
+    border-radius: 50%;
+    &:hover {
+      background-color: $hover-active-color;
+    }
+  }
+}
+
+#hero-carousel {
+  height: 100%;
+  .hero__intro,
+  h1,
+  p {
+    color: $white-color;
+  }
+  .slide {
+    height: $default-hero-height-sm;
+    background: {
+      size: cover;
+      position: center center;
+      repeat: no-repeat;
+    }
+
+    @include respond(md) {
+      height: $default-hero-height-md;
+    }
+    @include respond(lg) {
+      height: $default-hero-height-lg;
+    }
+    @include respond(xl) {
+      height: $default-hero-height-sm;
+    }
+  }
+  #first-slide {
+    background-image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+      url("../../images/hero-1.jpg");
+  }
+  #second-slide {
+    background-image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+      url("../../images/hero-2.jpg");
+  }
+
+  // Arrow navigation
+  .owl-nav {
+    .owl-prev {
+      left: $default-padding;
+    }
+
+    .owl-next {
+      right: $default-padding;
+    }
+  }
+
+  // Dots navigation
+  .owl-dots {
+    position: absolute;
+    bottom: $default-padding;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 20;
+    padding: 1rem;
+    display: flex;
+    @include justify-align-center;
+    .owl-dot {
+      width: 4rem;
+      height: 1rem;
+      background-color: $white-color;
+      cursor: pointer;
+      @include transition($property: background-color);
+
+      &:first-child {
+        margin-right: $default-padding;
+      }
+
+      &.active,
+      &:hover {
+        background-color: $hover-active-color;
+      }
+    }
+  }
+}
+
+// Upcoming event carousel (Home 2)
+#event-carousel {
+  position: relative;
+  // Arrow navigation
+  .owl-nav {
+    .owl-prev {
+      left: -$default-margin;
+      @include respond(md) {
+        left: -$spacing-lg;
+      }
+    }
+
+    .owl-next {
+      right: -$default-margin;
+      @include respond(md) {
+        right: -$spacing-lg;
+      }
+    }
+  }
+}
+
+// Upcoming event carousel (Home 2)
+#our-testimonial {
+  position: relative;
+  // Arrow navigation
+  .owl-nav {
+    .owl-prev,
+    .owl-next {
+      left: 50%;
+      top: auto;
+      transform: translate(-40%, 0);
+      bottom: -4rem;
+    }
+
+    .owl-prev {
+      left: 30%;
+      @include respond(md) {
+        left: 40%;
+      }
+    }
+
+    .owl-next {
+      left: auto;
+      right: 30%;
+      @include respond(md) {
+        right: 40%;
+      }
+    }
+  }
+}

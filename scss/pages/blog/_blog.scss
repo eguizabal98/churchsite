@@ -1,0 +1,25 @@
+// ALL BLOG POSTS ============================ //
+.blog {
+  color: $white-color;
+  text-align: center;
+  &__metas {
+    display: flex;
+    justify-content: center;
+
+    .meta {
+      @extend %metas;
+    }
+  }
+
+  &__title {
+    @extend %title;
+  }
+
+  &__content {
+    @extend %content;
+
+    .excerpt {
+      margin-bottom: $default-margin;
+    }
+  }
+}

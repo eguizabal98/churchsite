@@ -1,0 +1,45 @@
+// COLORS HELPER CLASSES ========================================= //
+.color-primary {
+  color: $primary-color;
+}
+.color-secondary {
+  color: $secondary-color;
+}
+.color-accent {
+  color: $accent-color;
+}
+.color-hover-active {
+  color: $hover-active-color;
+}
+
+.color-danger {
+  color: $danger-color;
+}
+
+.color-light-gray {
+  color: $light-gray-color;
+}
+.color-lighter-gray {
+  color: $lighter-gray-color;
+}
+
+// BACKGROUND COLORS HELPER CLASSES ========================================= //
+.background-primary {
+  background-color: $primary-color;
+}
+.background-secondary {
+  background-color: $secondary-color;
+}
+.background-accent {
+  background-color: $accent-color;
+}
+.background-hover-active {
+  background-color: $hover-active-color;
+}
+
+.background-light-gray {
+  background-color: $light-gray-color;
+}
+.background-lighter-gray {
+  background-color: $lighter-gray-color;
+}

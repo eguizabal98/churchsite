@@ -1,0 +1,21 @@
+// SIDEBARS =================================== //
+.sidebar {
+  &__widget {
+    &:not(:last-child) {
+      margin-bottom: $gutter-margin-vertical;
+    }
+  }
+
+  &__title {
+    margin-bottom: 1rem;
+  }
+
+  .card {
+    &:not(:last-child) {
+      margin-bottom: $gutter-margin-vertical;
+    }
+    &.custom-height {
+      height: calc((#{$default-card-height} - #{$gutter-margin-vertical}) / 1.5);
+    }
+  }
+}

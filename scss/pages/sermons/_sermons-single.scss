@@ -1,0 +1,38 @@
+// SERMONS SINGLE ============================ //
+.blog-single {
+  .blog-single__metas .blog__metas {
+    justify-content: flex-start;
+  }
+
+  .sermon__download {
+    background-color: $white-color;
+    margin-top: 0;
+    border-top-left-radius: 2.5rem;
+    border-bottom-left-radius: 2.5rem;
+    @include boxShadow($blur: 1.2rem);
+
+    @include respond(md) {
+      justify-content: flex-end;
+    }
+
+    a {
+      margin: 0;
+      padding: 0 0.6rem;
+
+      &:hover {
+        background-color: $hover-active-color;
+        i {
+          color: $white-color;
+        }
+      }
+    }
+  }
+
+  .blockquote {
+    margin-bottom: 1.6rem;
+
+    @include respond(md) {
+      margin: $default-margin 0;
+    }
+  }
+}

@@ -1,0 +1,28 @@
+// SUCCESS OR FAIL AFTER CONTACT FOORM ====================== //
+.message {
+  height: 60rem;
+  display: flex;
+  @include justify-align-center;
+
+  @include respond(md) {
+    height: 90vh;
+  }
+
+  @include respond(xl) {
+    height: 70rem;
+  }
+
+  h1 {
+    font-size: 8rem;
+  }
+
+  .icon {
+    font-size: 8rem;
+    &.success i {
+      color: $primary-color;
+    }
+    &.fail i {
+      color: $danger-color;
+    }
+  }
+}

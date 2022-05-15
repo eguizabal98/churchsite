@@ -1,0 +1,11 @@
+// ALL POSTS (POSTS PAGE) ============================ //
+.all-posts {
+  &__posts {
+    margin-bottom: 4rem;
+  }
+
+  .pagination {
+    // Centering
+    justify-content: center;
+  }
+}

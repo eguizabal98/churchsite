@@ -1,0 +1,146 @@
+// CARDS ======================================== //
+.card {
+  position: relative;
+  padding: $default-padding;
+  height: $default-card-height;
+  overflow: hidden;
+  display: flex;
+  color: $white-color;
+  @include justify-center;
+  @include align-end;
+
+  &__header {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 100%;
+    height: 100%;
+
+    &::before {
+      content: "";
+      position: absolute;
+      display: block;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 100%;
+      background-color: rgba($black-color, 0.4);
+    }
+  }
+
+  &__image {
+    width: 100%;
+    height: 100%;
+  }
+
+  &__body,
+  &__footer {
+    position: relative;
+    z-index: 10;
+  }
+
+  &--event {
+    justify-content: flex-start;
+  }
+
+  &.gallery__card {
+    .card__header {
+      &::before {
+        width: calc(100% - 4rem);
+        height: calc(100% - 4rem);
+        background-color: transparent;
+        @include border($border: 0.2rem, $color: $hover-active-color);
+        @include transition($property: transform);
+
+        @include respond(lg) {
+          transform: translate(-50%, -50%) rotate(-35deg) scale(0);
+        }
+      }
+    }
+
+    &:hover {
+      .card__header::before {
+        @include respond(lg) {
+          transform: translate(-50%, -50%) rotate(0) scale(1);
+        }
+      }
+    }
+  }
+
+  &.card--picture {
+    @include border($border: 0.2rem, $color: $hover-active-color);
+
+    &::before {
+      content: "";
+      display: block;
+      width: 30rem;
+      height: 30rem;
+      background-color: $hover-active-color;
+      position: absolute;
+      left: -4rem;
+      bottom: -12rem;
+      z-index: 5;
+      transform-origin: top left;
+      transform: rotate(45deg);
+    }
+
+    .card__header {
+      width: calc(100% - #{$spacing-md});
+      height: calc(#{$default-card-height - #{$spacing-md}}); // 50rem - 4rem
+    }
+
+    .card__footer {
+      margin-bottom: 2rem;
+    }
+
+    &.card--square {
+      width: $default-card-sqaure-width-height; // 15rem
+      height: $default-card-sqaure-width-height; // 15rem
+
+      &::before {
+        left: -10rem;
+      }
+
+      .card__header {
+        width: calc(#{$default-card-sqaure-width-height} - #{$spacing-sm}); // 15rem - 2rem
+        height: calc(#{$default-card-sqaure-width-height} - #{$spacing-sm}); // 15rem - 2rem
+      }
+    }
+  }
+
+  &--shop {
+    .sale-banner {
+      background-color: $primary-color;
+      padding: 0.6rem 2rem;
+      font-size: 1.6rem;
+      position: absolute;
+      top: 2rem;
+      left: 2rem;
+      z-index: 12;
+    }
+
+    .shop__details {
+      margin-bottom: 2rem;
+      &--price {
+        font-size: 1.6rem;
+        margin-top: 0.6rem;
+      }
+    }
+
+    .shop__link {
+      .button--link {
+        margin-top: 1rem;
+        color: $hover-active-color;
+        padding: 1.6rem 3rem;
+        @include border($color: $hover-active-color);
+
+        &:hover {
+          background-color: $hover-active-color;
+          color: $white-color;
+        }
+      }
+    }
+  }
+}

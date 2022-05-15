@@ -1,0 +1,94 @@
+// Importing Google font - Roboto Condensed & Lobster Two
+@import url("https://fonts.googleapis.com/css?family=Lobster+Two|Roboto+Condensed:400,700&display=swap");
+// Importing Remix Icon
+@import url("https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css");
+
+// ABSTRACTS
+@import "abstracts/variables";
+@import "abstracts/mixins";
+@import "abstracts/placeholders";
+
+// BASE
+@import "base/normalize";
+@import "base/base";
+@import "base/typography";
+@import "base/utilities";
+
+// COLORS
+@import "colors/colors";
+
+// LAYOUT
+@import "layout/grid";
+@import "layout/headers";
+@import "layout/banner";
+@import "layout/single";
+@import "layout/sidebar";
+@import "layout/time-location";
+@import "layout/footer";
+
+// VENDORS
+@import "vendor/aos"; // plugin for using animate on scroll
+@import "vendor/card"; // plugin for using credit card
+@import "vendor/lightbox"; // gallery lightbox plugin
+@import "vendor/owl.carousel"; // carousel plugin
+
+// COMPONENTS
+@import "components/breadcrumbs";
+@import "components/buttons";
+@import "components/cards";
+@import "components/carousel";
+@import "components/comments";
+@import "components/forms";
+@import "components/gallery-lightbox";
+@import "components/pagination";
+@import "components/scroll-top";
+@import "components/search";
+@import "components/share";
+@import "components/testimonial";
+
+// PAGES
+
+// Homepage 1 - Sections
+@import "pages/home/hero";
+@import "pages/home/next-event";
+@import "pages/home/last-sermon";
+@import "pages/home/our-ministries";
+@import "pages/home/our-gallery";
+@import "pages/home/our-testimonial";
+@import "pages/home/recent-articles";
+
+// About page - Sections
+@import "pages/about/our-mission-vision";
+@import "pages/about/our-belief";
+@import "pages/about/our-stats";
+
+// Other pages
+@import "pages/staffs/staffs";
+
+@import "pages/events/all-events";
+@import "pages/events/events";
+
+// Sermons page - Sections
+@import "pages/sermons/all-sermons";
+@import "pages/sermons/sermons";
+@import "pages/sermons/sermons-single";
+
+// Ministries page - Sections
+@import "pages/ministries/all-ministries";
+@import "pages/ministries/ministries";
+
+// Blog page - Sections
+@import "pages/blog/all-posts";
+@import "pages/blog/blog";
+@import "pages/blog/blog-single";
+
+// Contact page - Sections
+@import "pages/contact/contact";
+
+// Extra pages
+@import "pages/extra-pages/donations";
+@import "pages/extra-pages/staffs-single";
+
+// Miscs
+@import "miscs/page-loader";
+@import "miscs/elements";

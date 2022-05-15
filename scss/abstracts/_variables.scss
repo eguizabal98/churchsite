@@ -1,0 +1,98 @@
+// ============================== VARIABLES ========================================== //
+
+// COLORS SCHEME ======================== //
+$primary-color: #51a3a3;
+$secondary-color: #dd7373;
+$accent-color: #274f73;
+$hover-active-color: #ead94c;
+
+$danger-color: #842722;
+
+// Grays
+$light-gray-color: #d1d1d1;
+$lighter-gray-color: #f5f5f5;
+
+// Neutral colors
+$white-color: #ffffff;
+$black-color: #000000;
+
+// Others
+$footer-bg-color: #0a151e;
+
+// TYPOGRAPHY ======================== //
+
+// Typeface
+$body-font-family: "Roboto Condensed", sans-serif;
+$fancy-font-family: "Lobster Two", cursive;
+
+// Font weight
+$regular-weight: 400;
+$bold-weight: 700;
+
+// Base font sizes (html) for various screen sizes
+$base-font-size-sm: 50%; // 8 / 16  ~ 8px
+$base-font-size-md: 56.25%; // 9 / 16  ~ 9px
+$base-font-size-lg: 62.5%; // 10 / 16  ~ 10px
+$base-font-size-xl: 75%; // 12 / 16  ~ 12px
+
+// Font sizes
+$h1: 4rem; // xl: 50px
+$h2: 3rem; // xl: 45px
+$h3: 2.5rem; // xl: 30px
+
+$leading-font-size: 2rem; // lg: 20px
+
+$line-height: 1.5; // 150%
+
+// SPACING ======================== //
+$default-padding: 2rem; // lg: 20px
+$default-margin: 2rem; // lg: 20px
+
+$section-default-spacing: 5rem; // lg: 50px
+
+$button-padding: 1.6rem 2rem; // lg: 16px 20px
+$form-padding: $button-padding;
+
+$header-menu-link-padding: 2rem 1.6rem; // Individual menu item link (a tag)
+
+$spacing-xs: 0.6rem;
+$spacing-sm: 2rem;
+$spacing-md: 4rem;
+$spacing-lg: 6rem;
+$spacing-xl: 8rem;
+
+// HEIGHTS ======================== //
+
+// Hero section height
+$default-hero-height-sm: 70rem;
+$default-hero-height-md: 90rem;
+$default-hero-height-lg: 60rem;
+
+// Card height
+$default-card-height: 50rem; // default card height
+$default-gallery-card-height: 30rem; // default gallery card height
+$default-card-sqaure-width-height: 15rem; // testimonial card height & width
+
+// GRID LAYOUT ======================== //
+
+// Grid variables
+$gutter-padding-horizontal: 1.5rem; // 15px
+$gutter-margin-vertical: 2rem; // 20px
+
+// Breakpoints
+$sm: 0em;
+$md: 34.5625em; // 553px / 16px
+$lg: 56.3125em; // 901px / 16px
+$xl: 87.5625em; // 1401px / 16px
+
+// Breakpoint - max-width for container
+$width-container-sm: 90%;
+$width-container-md: 85%;
+$width-container-lg: 123.3rem; // 1233px = 1233px (desired max-width) / 10px (base font size) ~ 123.3rem
+$width-container-xl: 130rem; // 1560px = 1560px (desired max-width) / 12px (base font size) ~ 130rem
+
+// STACKING ======================== //
+
+$zindex-100: 100;
+$zindex-200: 200;
+$zindex-400: 400;

@@ -1,0 +1,10 @@
+// SEARCH COMPONENT FOR THE SEARCH, MINISTRIES, EVENTS, AND BLOG PAGES ==================================== //
+.search {
+  .text {
+    opacity: 0.6;
+  }
+
+  .form__group {
+    margin-right: $gutter-padding-horizontal * 2;
+  }
+}

@@ -1,0 +1,12 @@
+// LAST WEEK SERMON SECTION (HOMEPAGE 1) ============================== //
+.last-sermon {
+  .sermon {
+    &__metas {
+      justify-content: flex-start;
+    }
+
+    &__content .title {
+      margin-bottom: 1rem;
+    }
+  }
+}

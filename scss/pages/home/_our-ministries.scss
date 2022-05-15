@@ -1,0 +1,12 @@
+// OUR MINSTRIES SECTION ON THE HOMEPAGE ============================= //
+.our-ministries {
+  .card.custom-height {
+    height: calc(#{$default-card-height} / 1.5); // original height / 1.5 = 50rem / 1.5
+
+    @include respond(lg) {
+      height: calc(
+        (#{$default-card-height} - #{$spacing-sm}) / 2
+      ); // (original height - bottom margin) / number of card = (50rem - 2rem) / 2
+    }
+  }
+}

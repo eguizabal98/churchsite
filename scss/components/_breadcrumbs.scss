@@ -1,0 +1,22 @@
+// BREADCRUMBS =============================== //
+.breadcrumb {
+  display: flex;
+  text-transform: uppercase;
+
+  &__home--link {
+    font-weight: $bold-weight;
+  }
+
+  span {
+    margin: 0 1rem;
+    width: 1.2rem;
+    height: 1.2rem;
+    border-top: 0.4rem solid $light-gray-color;
+    border-right: 0.4rem solid $light-gray-color;
+    transform: rotate(45deg) translateY(50%);
+  }
+
+  &__current--page-link {
+    opacity: 0.6;
+  }
+}

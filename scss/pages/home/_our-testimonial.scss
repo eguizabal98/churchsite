@@ -1,0 +1,58 @@
+// OUR TESTIMONIAL ================================ //
+.our-testimonial {
+  position: relative;
+  &__background--cover {
+    position: absolute;
+    height: 40rem;
+    width: 100%;
+    top: 0;
+    left: 0;
+    background: {
+      image: url("../../images/background-1.jpg");
+      size: cover;
+      position: left;
+      repeat: no-repeat;
+      attachment: fixed;
+    }
+
+    clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    @include respond(md) {
+      clip-path: polygon(0% 0%, 100% 0, 100% 80%, 50% 100%, 0 80%);
+    }
+    @include respond(lg) {
+      clip-path: polygon(0% 0%, 80% 0%, 100% 50%, 80% 100%, 0% 100%);
+    }
+
+    @include respond(lg) {
+      height: 100%;
+      width: percentage((5 / 12)); // 5 cols
+    }
+  }
+
+  &__content {
+    margin-top: 40rem; // cover height
+
+    @include respond(lg) {
+      margin-top: 0;
+    }
+  }
+}
+
+// Homepage 2
+.home-2 .our-testimonial {
+  background: {
+    image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+      url("../../images/background-3.jpg");
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+
+  &__content {
+    margin-top: 0; // remove cover height
+  }
+
+  .testimonial {
+    margin-bottom: 0;
+  }
+}

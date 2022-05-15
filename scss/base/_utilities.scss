@@ -1,0 +1,230 @@
+.text-center {
+  text-align: center !important;
+}
+
+.text-left {
+  text-align: left !important;
+}
+
+.text-right {
+  text-align: right !important;
+}
+
+.uppercase {
+  text-transform: uppercase !important;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
+.bold {
+  font-weight: $bold-weight !important;
+}
+
+// ==== TYPOGRAPHY === //
+.fancy-font {
+  font-family: $fancy-font-family;
+}
+
+// ==== ALIGNMENT === //
+
+// Fixed
+.fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  z-index: $zindex-100;
+}
+
+// Will display normal flex with direction: row
+.display-flex {
+  display: flex;
+}
+
+// Will display normal flex with direction: column
+.display-flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+// Align content of a flex container to the center horizontally (parent element must have display: flex) - flex-dirction: row <- default
+.justify-content-center {
+  @include justify-center;
+}
+
+// Align content of a flex container to the end horizontally (parent element must have display: flex) - flex-dirction: row <- default
+.justify-content-end {
+  @include justify-end;
+}
+
+// Align content of a flex container to the center vertically (parent element must have display: flex) - flex-dirction: row <- default
+.align-items-center {
+  @include align-center;
+}
+
+// Align content of a flex container to the end vertically (parent element must have display: flex) - flex-dirction: row <- default
+.align-items-end {
+  @include align-end;
+}
+
+// Align content of a flex container to the center both horizontally and vertically (parent element must have display: flex) - flex-dirction: row <- default
+.justify-align-center {
+  @include justify-align-center;
+}
+
+// === WHITESPACE === //
+
+.no-gutter,
+.no-margin {
+  margin: 0 !important;
+}
+
+.no-padding {
+  padding: 0 !important;
+}
+
+.separator {
+  width: 100%;
+  height: 0.2rem;
+  background-color: $light-gray-color;
+}
+
+.default-section-spacing {
+  padding-top: $section-default-spacing;
+  padding-bottom: $section-default-spacing;
+}
+
+.mar-b-xs {
+  margin-bottom: $spacing-xs !important;
+}
+
+.mar-b-sm {
+  margin-bottom: $spacing-sm !important;
+}
+
+.mar-t-xs {
+  margin-top: $spacing-xs !important;
+}
+
+.mar-t-sm {
+  margin-top: $spacing-sm !important;
+}
+
+.pad-b-xs {
+  padding-bottom: $spacing-xs !important;
+}
+
+.pad-b-sm {
+  padding-bottom: $spacing-sm !important;
+}
+
+.pad-t-xs {
+  padding-top: $spacing-xs !important;
+}
+
+.pad-t-sm {
+  padding-top: $spacing-sm !important;
+}
+
+.mar-b-lg {
+  // margin bottom - 6rem
+  margin-bottom: $spacing-lg !important;
+}
+
+.full-width {
+  // will make the selected element 100% of its parent's width
+  width: 100% !important;
+}
+
+.full-screen {
+  // will make the selected element fill the whole viewport
+  width: 100% !important;
+  height: 100vh !important;
+}
+
+.full-viewport-height {
+  // will make the selected element 100vh of the viewport height
+  height: 100vh !important;
+}
+
+.overflow-hidden {
+  overflow: hidden;
+  @include respond(lg) {
+    overflow-y: scroll;
+  }
+}
+
+// =============== COLORS ======================== //
+.text-white {
+  color: $white-color !important;
+}
+
+// === VISIBILITY HELPER CLASSES === //
+.hide {
+  // hide on all devices
+  display: none;
+  visibility: hidden;
+}
+
+.hide-on-sm {
+  // hide on small devices
+  @include respond(sm) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.hide-on-md {
+  // hide on medium size devices
+  @include respond(md) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.hide-on-lg {
+  // hide on large size devices
+  @include respond(lg) {
+    display: none;
+    visibility: hidden;
+  }
+}
+.hide-on-xl {
+  // hide on extra large devices
+  @include respond(xl) {
+    display: none;
+    visibility: hidden;
+  }
+}
+
+// Showing
+.show-on-sm {
+  // show on small devices
+  @include respond(sm) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.show-on-md {
+  // show on medium size devices
+  @include respond(md) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.show-on-lg {
+  // show on large size devices
+  @include respond(lg) {
+    display: block;
+    visibility: visible;
+  }
+}
+
+.show-on-xl {
+  // show on extra large devices
+  @include respond(xl) {
+    display: block;
+    visibility: visible;
+  }
+}

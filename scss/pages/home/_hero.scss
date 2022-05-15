@@ -1,0 +1,80 @@
+// ALL HERO SECTIONS ===================================== //
+.hero {
+  height: $default-hero-height-sm; // 70rem
+  position: relative;
+  overflow: hidden;
+  background: {
+    size: cover;
+    position: center center;
+    repeat: no-repeat;
+  }
+
+  @include respond(md) {
+    height: $default-hero-height-md; // 90rem
+  }
+  @include respond(lg) {
+    height: $default-hero-height-lg; // 60rem
+  }
+  @include respond(xl) {
+    height: $default-hero-height-sm;
+  }
+
+  &__content {
+    .hero__intro {
+      font-family: $fancy-font-family;
+      font-size: 1.6rem;
+      margin-bottom: $default-margin;
+    }
+
+    h1 {
+      font-size: 4.5rem;
+    }
+
+    .hero__cta {
+      margin-top: 4rem;
+    }
+  }
+}
+
+// Second homepage
+.hero-2 {
+  background-image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+    url("../../images/hero-3.jpg");
+  display: flex;
+  flex-direction: column;
+  @include justify-center;
+
+  .hero__content {
+    color: $white-color;
+  }
+}
+
+// Third homepage
+.hero-3 {
+  .hero__clip--cover {
+    position: absolute;
+    width: percentage((5 / 12));
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+      url("../../images/hero-4.jpg");
+    background-position: left;
+
+    clip-path: polygon(0% 0%, 90% 0%, 100% 50%, 90% 100%, 0% 100%);
+  }
+
+  background-image: linear-gradient(to right, rgba($black-color, 0.4), rgba($black-color, 0.4)),
+    url("../../images/hero-4.jpg");
+  background-position: left;
+  display: flex;
+  flex-direction: column;
+  @include justify-center;
+
+  .hero__content {
+    color: $white-color;
+    padding-top: 12rem;
+    position: relative;
+    z-index: 15;
+  }
+}

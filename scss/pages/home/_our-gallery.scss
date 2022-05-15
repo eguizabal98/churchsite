@@ -1,0 +1,68 @@
+// OUR GALLERY SECTION (HOMEPAGE 1) ================================ //
+.our-gallery {
+  .row {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
+  .gallery-link {
+    display: block;
+  }
+
+  &.gallery--equal-grid {
+    .gallery__card {
+      height: $default-gallery-card-height; // 30rem
+    }
+  }
+}
+
+// OUR GALLERY SECTION (HOMEPAGE 3) ================================ //
+.our-gallery.gallery--unequal-grid {
+  .row {
+    margin-left: -$gutter-padding-horizontal; // 1.5rem
+    margin-right: -$gutter-padding-horizontal; // 1.5rem
+  }
+
+  .four,
+  .three {
+    @include respond(md) {
+      margin: $gutter-margin-vertical 0;
+      .stretch-vertical {
+        height: $default-gallery-card-height;
+      }
+    }
+  }
+
+  @include respond(lg) {
+    .three,
+    .four {
+      margin: 0;
+      .stretch-vertical {
+        height: calc(#{$default-gallery-card-height} * 2); // Making it 2x its default height so it stretch 2 rows
+      }
+    }
+
+    .five,
+    .six {
+      margin-top: calc(
+        (-#{$default-gallery-card-height}) + #{$gutter-margin-vertical}
+      ); // bring these two the top (-30rem + 2rem)
+
+      .gallery__card {
+        height: calc((#{$default-gallery-card-height}) - #{$gutter-margin-vertical}); // (30rem - 2rem)
+      }
+    }
+  }
+
+  .equal-height {
+    height: $default-gallery-card-height; // 30rem
+  }
+
+  .stretch-vertical {
+    height: calc(#{$default-gallery-card-height} * 2); // Making it 2x its default height so it stretch 2 rows
+  }
+
+  .stretch-horizontal {
+    height: $default-gallery-card-height; // 30rem
+  }
+}

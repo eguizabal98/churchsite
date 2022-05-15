@@ -1,0 +1,41 @@
+// BANNER ===================================== //
+.banner {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: $white-color;
+  height: 30rem;
+  padding-bottom: 2rem;
+
+  @include respond(xl) {
+    height: 40rem;
+  }
+
+  background: {
+    image: linear-gradient(to right, rgba($black-color, 0.6), rgba($black-color, 0.6)), url("../../images/banner.jpg");
+    position: center center;
+    size: cover;
+    repeat: no-repeat;
+  }
+
+  &__content {
+    @include respond(md) {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-end;
+    }
+
+    .breadcrumb {
+      @include respond(md) {
+        margin-left: $gutter-padding-horizontal;
+      }
+    }
+  }
+
+  &__heading {
+    margin-bottom: $default-margin;
+    @include respond(md) {
+      margin-bottom: 0;
+    }
+  }
+}

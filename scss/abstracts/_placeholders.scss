@@ -1,0 +1,25 @@
+// SOME PLACEHOLDERS =========================== //
+%metas {
+  // Deals with ministries, sermons, and blog post meta info such as published date, author etc...
+  font-size: 1.6rem;
+  &:not(:last-child) {
+    margin-right: $default-margin;
+  }
+
+  display: flex;
+  @include align-center;
+
+  i {
+    margin-right: 0.4rem;
+  }
+}
+
+%content {
+  // Deals with ministries, sermons, and blog post content which usually includes the excerpt...
+  margin-top: 1rem;
+}
+
+%title {
+  // Deals with ministries, sermons, and blog post title...
+  margin-top: $default-margin;
+}

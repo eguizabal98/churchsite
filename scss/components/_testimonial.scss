@@ -1,0 +1,19 @@
+// TESTIMONIAL =================================== //
+.testimonial {
+  @include respond(lg) {
+    display: flex;
+    align-items: flex-end;
+  }
+
+  &__avatar {
+    margin-bottom: $default-margin;
+    @include respond(lg) {
+      margin-right: $default-margin;
+      margin-bottom: 0;
+    }
+  }
+
+  &__author {
+    color: rgba($color: $white-color, $alpha: 0.6);
+  }
+}

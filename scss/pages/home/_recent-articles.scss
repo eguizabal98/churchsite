@@ -1,0 +1,12 @@
+// RECENT ARTICLES SECTION ======================== //
+.recent-articles {
+  [class*="flex-"]:nth-child(3) {
+    // adding margin to the third column
+    @include respond(md) {
+      margin-top: $default-margin;
+    }
+    @include respond(lg) {
+      margin: 0;
+    }
+  }
+}

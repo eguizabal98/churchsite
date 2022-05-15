@@ -1,0 +1,49 @@
+// ALL MINISTRIES ============================ //
+.ministry {
+  justify-content: flex-start;
+  color: $white-color;
+  &__metas {
+    display: flex;
+
+    .meta {
+      &:not(:last-child) {
+        margin-right: $default-margin;
+      }
+    }
+
+    .meta {
+      display: flex;
+      @include align-center;
+
+      i {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+
+  &__meta {
+    margin: 1.2rem 0;
+    font-size: $leading-font-size;
+
+    @include respond(md) {
+      margin: 0.4rem 0;
+    }
+  }
+
+  &__content {
+    width: 100%;
+    @include respond(md) {
+      display: flex;
+      justify-content: space-between;
+      @include align-center;
+    }
+    .excerpt {
+      margin-bottom: $default-margin;
+      @include respond(md) {
+        margin-bottom: 0;
+        flex: 50%;
+        margin-right: $default-margin;
+      }
+    }
+  }
+}

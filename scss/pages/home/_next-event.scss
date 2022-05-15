@@ -1,0 +1,24 @@
+// NEXT EVENT SECTION ON THE HOMEPAGE 1 ============================= //
+.next-event {
+  color: $white-color;
+
+  clip-path: none;
+  @include respond(md) {
+    clip-path: polygon(0% 0%, 95% 0%, 100% 50%, 95% 100%, 0% 100%);
+  }
+  @include respond(xl) {
+    clip-path: polygon(0% 0%, 98% 0%, 100% 50%, 98% 100%, 0% 100%);
+  }
+
+  .intro {
+    margin-bottom: 1rem;
+  }
+
+  &__cta {
+    margin-top: $default-margin; // 2rem
+    @include respond(md) {
+      margin-top: 0;
+      text-align: right;
+    }
+  }
+}

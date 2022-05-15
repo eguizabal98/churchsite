@@ -1,0 +1,17 @@
+// STAFFS SINGLE PAGE ================================ //
+.staffs-single {
+  &__details {
+    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+    border-bottom: 0.1rem solid $lighter-gray-color;
+    .staff__title {
+      margin-bottom: 0;
+    }
+  }
+
+  &__testimonial {
+    h3 {
+      margin-bottom: 1rem;
+    }
+  }
+}

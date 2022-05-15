@@ -1,0 +1,22 @@
+// OUR BELIEF ============================ //
+.our-belief {
+  &__box {
+    .heading {
+      position: relative;
+      display: inline-block;
+      width: auto;
+      margin-bottom: $default-margin;
+
+      &::before {
+        content: "";
+        position: absolute;
+        width: 50%;
+        height: 0.4rem;
+        background-color: $hover-active-color;
+        bottom: -0.8rem;
+        left: 50%;
+        transform: translateX(-50%);
+      }
+    }
+  }
+}

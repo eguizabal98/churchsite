@@ -1,0 +1,486 @@
+// GLOBAL HEADERS =========================================================== //
+.header {
+  width: 100%;
+  @include respond(lg) {
+    position: relative;
+    z-index: $zindex-100;
+  }
+  // The <nav> element
+  #{&}__nav {
+    position: relative;
+    padding: 2rem 0;
+
+    @include respond(lg) {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0;
+    }
+  }
+
+  // Brand logo
+  #{&}__logo {
+    width: 15rem;
+    a {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      height: 100%;
+      width: 100%;
+    }
+  }
+
+  #{&}__top-nav {
+    position: relative;
+    font-size: 2rem;
+    padding: 2rem 0;
+    color: $white-color;
+
+    @include respond(lg) {
+      font-size: 1.6rem;
+      padding: 1.2rem 0;
+    }
+
+    .header__option {
+      display: flex;
+      @include align-center;
+
+      .email {
+        margin-right: $default-margin;
+      }
+
+      .desktop,
+      .email a {
+        color: $white-color;
+        display: flex;
+        @include align-center;
+
+        i {
+          margin-right: $default-margin;
+
+          @include respond(lg) {
+            margin-right: 1.2rem;
+          }
+        }
+      }
+    }
+  }
+
+  .header__extra.desktop-version {
+    @include respond(lg) {
+      margin-left: 6rem;
+    }
+  }
+
+  // Mobile menu icon container
+  #{&}__mobile--opener {
+    position: absolute;
+    top: 50%;
+    right: 0;
+    transform: translateY(-50%);
+  }
+
+  // The menu icon for mobile devices
+  #{&}__mobile--icon {
+    position: relative;
+    background-color: transparent;
+    width: 5rem;
+    height: 5rem;
+    font-size: 4.5rem;
+    padding: 0.6rem;
+    cursor: pointer;
+    @include transition;
+
+    &.rotate {
+      transform: rotate(90deg);
+      height: 4rem;
+      width: 4rem;
+    }
+
+    span {
+      @include transition;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 100%;
+      height: 0.3rem;
+      background-color: $accent-color;
+      &:nth-child(1) {
+        top: 20%;
+        transform: translate(-50%, 0);
+      }
+      &:nth-child(3) {
+        top: auto;
+        bottom: 20%;
+        transform: translate(-50%, 0);
+      }
+    }
+  }
+
+  // The menu items
+  #{&}__navitems {
+    background-color: $white-color;
+    width: 80%;
+    height: 100%;
+    padding: 2rem 0;
+    opacity: 0;
+    visibility: hidden;
+    overflow-y: auto;
+    position: fixed;
+    top: 0;
+    left: 0;
+    transform: translateX(-100%);
+    z-index: $zindex-100;
+    @include boxShadow;
+    @include transition;
+
+    @include respond(lg) {
+      opacity: 1;
+      visibility: visible;
+      background-color: transparent;
+      position: initial;
+      display: flex;
+      flex: 1;
+      justify-content: flex-end;
+      transform: translateX(0);
+      padding: 0;
+      overflow-y: visible;
+      z-index: 0;
+      box-shadow: none;
+      transition: none;
+      margin: 0 6rem;
+      margin-right: 0;
+    }
+
+    &.active {
+      transform: translateX(0);
+      opacity: 1;
+      visibility: visible;
+    }
+
+    // The extra stuff (button)
+    .header__extra {
+      padding: 0 2rem 2rem 2rem;
+      position: relative;
+
+      @include respond(lg) {
+        display: none;
+        visibility: hidden;
+      }
+
+      &::after {
+        content: "";
+        display: block;
+        position: absolute;
+        left: 50%;
+        bottom: 0;
+        transform: translateX(-50%);
+        width: calc(100% - 8rem);
+        height: 0.2rem;
+        background-color: $light-gray-color;
+      }
+
+      .cta--search {
+        .form__group {
+          flex: 1;
+          margin-right: 2rem;
+        }
+
+        i {
+          color: $light-gray-color;
+        }
+      }
+    }
+
+    // The menu items and submenus
+    .header__list {
+      position: relative;
+      a {
+        position: relative;
+        text-transform: uppercase;
+        display: block;
+        font-size: 1.8rem;
+        padding: $header-menu-link-padding;
+        color: $black-color;
+
+        @include respond(lg) {
+          font-size: 1.4rem;
+          padding: 2.5rem 1.4rem;
+        }
+
+        @include respond(xl) {
+          font-size: 1.5rem;
+          padding: 2.5rem 2rem;
+        }
+      }
+
+      // when active or hovered
+      &.active > a,
+      &:hover > a {
+        color: $accent-color;
+        font-weight: $bold-weight;
+        @include respond(lg) {
+          font-weight: $regular-weight;
+        }
+      }
+    }
+
+    // Submenus
+    .header__list > .header__submenu {
+      margin-left: 10%;
+      max-height: 0;
+      opacity: 0;
+      visibility: hidden;
+      @include transition;
+
+      .header__list {
+        & > a {
+          @include respond(lg) {
+            padding: 1.2rem $default-padding;
+          }
+        }
+
+        &:hover > a,
+        &.active > a {
+          background-color: $accent-color;
+          color: $white-color;
+        }
+      }
+
+      @include respond(lg) {
+        width: 22rem;
+        margin-left: 0;
+        background-color: $white-color;
+        padding: 0;
+        display: block;
+
+        position: absolute;
+        top: 160%;
+        max-height: initial;
+
+        @include boxShadow;
+      }
+
+      @include respond(xl) {
+        a {
+          font-size: 1.3rem;
+        }
+      }
+
+      a {
+        i {
+          @include respond(lg) {
+            right: $default-padding;
+          }
+        }
+
+        &::before {
+          @include respond(lg) {
+            transform: rotate(0deg);
+            top: 0;
+            left: 0;
+          }
+        }
+      }
+    }
+
+    .header__list:hover > .header__submenu {
+      max-height: 100%;
+      opacity: 1;
+      visibility: visible;
+      @include respond(lg) {
+        max-height: initial;
+        top: 100%;
+      }
+    }
+
+    .header__submenu .header__submenu {
+      @include respond(lg) {
+        left: 130%;
+        @include transition;
+      }
+    }
+
+    .header__submenu .header__list:hover .header__submenu {
+      @include respond(lg) {
+        left: 100%;
+        top: 0;
+      }
+    }
+  }
+}
+
+// Not really part of the navigation components ============================== //
+.header {
+  &.white-bg {
+    .header__extra.desktop-version .shopping-cart .bag i {
+      color: $black-color;
+    }
+  }
+  .header__extra.desktop-version {
+    display: flex;
+    align-items: center;
+
+    .shopping-cart {
+      position: absolute;
+      top: 50%;
+      left: 60%;
+      transform: translate(-50%, -50%);
+      @include respond(lg) {
+        position: initial;
+        transform: translate(0, 0);
+      }
+      .bag {
+        position: relative;
+        font-size: 3.5rem;
+
+        @include respond(lg) {
+          font-size: 2.5rem;
+          margin-right: $default-margin;
+          cursor: pointer;
+        }
+        i {
+          color: $white-color;
+        }
+
+        span.full {
+          width: 1.6rem;
+          height: 1.6rem;
+          border-radius: 50%;
+          background-color: $accent-color;
+          position: absolute;
+          top: 1rem;
+          right: 0;
+
+          @include respond(lg) {
+            width: 1.2rem;
+            height: 1.2rem;
+          }
+        }
+
+        &:hover {
+          i {
+            color: $hover-active-color;
+          }
+        }
+      }
+    }
+  }
+
+  // Top nav
+  #{&}__top-nav {
+    .header__extra.desktop-version {
+      justify-content: flex-end;
+      margin: 0;
+
+      .shopping-cart {
+        position: absolute;
+        top: 50%;
+        left: 100%;
+        transform: translate(-100%, -50%);
+        @include respond(lg) {
+          position: initial;
+          transform: translate(0, 0);
+        }
+      }
+    }
+  }
+}
+// Helper classes for the header for background and text color ====================== //
+.header {
+  // Deals with transparency
+  &.transparent {
+    background-color: transparent;
+    @include transition;
+  }
+
+  // Deals with white bg
+  &.white-bg {
+    background-color: $white-color;
+    @include boxShadow;
+    @include transition;
+
+    .header__mobile--icon span {
+      background-color: $accent-color;
+    }
+
+    .header__top-nav {
+      .header__option {
+        .desktop,
+        .email a {
+          color: $black-color;
+        }
+      }
+    }
+  }
+
+  // Deals with white bg
+  &.dark-bg {
+    background-color: $black-color;
+    @include boxShadow;
+    @include transition;
+
+    .header__mobile--icon span {
+      background-color: $accent-color;
+    }
+  }
+
+  // Makes links and text color inside the header white
+  &.light-text {
+    @include respond(lg) {
+      .header__navitems .header__list {
+        a {
+          color: $white-color;
+        }
+        // when active or hovered
+        &.active > a,
+        &:hover > a {
+          color: $accent-color;
+        }
+      }
+      // Submenu
+      .header__navitems .header__submenu {
+        a {
+          color: $black-color;
+        }
+      }
+    }
+  }
+
+  // Makes links and text color inside the header black
+  &.dark-text {
+    @include respond(lg) {
+      .header__navitems .header__list {
+        a {
+          color: $black-color;
+        }
+        // when active or hovered
+        &.active > a,
+        &:hover > a {
+          color: $accent-color;
+        }
+      }
+      // Submenu
+      .header__navitems .header__submenu {
+        a {
+          color: $black-color;
+        }
+      }
+    }
+
+    .header__extra.desktop-version {
+      .shopping-cart {
+        .bag {
+          i {
+            color: $black-color;
+          }
+          &:hover i {
+            color: $hover-active-color;
+          }
+        }
+      }
+    }
+  }
+}

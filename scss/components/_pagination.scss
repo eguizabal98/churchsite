@@ -1,0 +1,43 @@
+// PAGINATION ====================================== //
+.pagination {
+  display: flex;
+  font-size: 3rem;
+
+  @include respond(lg) {
+    font-size: 2rem;
+  }
+
+  span {
+    margin: 0 0.5rem;
+    width: 4.5rem;
+    height: 4.5rem;
+    color: $accent-color;
+    cursor: pointer;
+    @include border($border: 0.2rem, $color: $accent-color);
+    @include transition;
+
+    a {
+      display: flex;
+      @include justify-align-center;
+      width: 100%;
+      height: 100%;
+    }
+
+    &:hover {
+      border-color: $hover-active-color;
+      color: $hover-active-color;
+    }
+
+    &.active {
+      background-color: $hover-active-color;
+      border-color: $hover-active-color;
+      a {
+        color: $white-color;
+      }
+    }
+  }
+
+  .pagination__arrow:hover {
+    background-color: transparent;
+  }
+}

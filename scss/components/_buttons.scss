@@ -1,0 +1,95 @@
+// BUTTONS ==================================================== //
+.button,
+input[type="submit"],
+button[type="submit"] {
+  font-size: 1.6rem;
+  padding: $button-padding;
+  text-align: center;
+  border: 0;
+  cursor: pointer;
+  color: $white-color;
+  background-color: $accent-color;
+  @include border($color: transparent);
+  @include transition;
+
+  @include respond(md) {
+    padding: 1.6rem 3rem;
+  }
+
+  &:hover {
+    color: $white-color;
+    background-color: $hover-active-color;
+  }
+
+  &.button--link {
+    color: $accent-color;
+    background-color: transparent;
+    padding: 1.6rem 0;
+
+    i {
+      margin-left: 1rem;
+    }
+
+    &:hover {
+      color: $hover-active-color;
+    }
+  }
+}
+
+// making button block element on various screen sizes
+.button-block-sm {
+  @include respond(sm) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.button-block-md {
+  @include respond(md) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.button-block-lg {
+  @include respond(lg) {
+    display: block;
+    width: 100%;
+  }
+}
+
+.button-block-xl {
+  @include respond(xl) {
+    display: block;
+    width: 100%;
+  }
+}
+
+// making button inline-block element on various screen sizes
+.button-inline-sm {
+  @include respond(sm) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.button-inline-md {
+  @include respond(md) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.button-inline-lg {
+  @include respond(lg) {
+    display: inline-block;
+    width: auto;
+  }
+}
+
+.button-inline-xl {
+  @include respond(xl) {
+    display: inline-block;
+    width: auto;
+  }
+}

@@ -1,0 +1,11 @@
+// ALL SERMONS (SERMONS PAGE) ============================ //
+.all-sermons {
+  &__sermons {
+    margin-bottom: 4rem;
+  }
+
+  .pagination {
+    // Centering
+    justify-content: center;
+  }
+}

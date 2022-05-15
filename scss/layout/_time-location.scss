@@ -1,0 +1,42 @@
+// TIME AND LOCATION ====================================== //
+.time-location {
+  position: relative;
+  &__content {
+    .info {
+      display: flex;
+
+      &:not(:last-child) {
+        margin-bottom: $default-margin;
+      }
+
+      .day,
+      .location {
+        margin-right: $default-margin;
+      }
+
+      span {
+        display: block;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__map {
+    width: 100%;
+    height: 100%;
+
+    @include respond(lg) {
+      position: absolute;
+      width: 50%;
+      top: 0;
+      right: 0;
+    }
+
+    iframe {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}

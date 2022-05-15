@@ -1,0 +1,53 @@
+// DONATION PAGE ================================ //
+.donations {
+  position: relative;
+  h3 {
+    margin-bottom: 1rem;
+  }
+
+  &__form &__amount,
+  &__form &__frequency,
+  &__form &__type,
+  &__form &__payment {
+    margin-bottom: 4rem;
+  }
+
+  &__form &__amount,
+  &__form &__type {
+    .form__group {
+      margin-bottom: 2rem;
+      @include respond(md) {
+        margin-bottom: 0;
+      }
+    }
+
+    input#custom {
+      padding-left: 6rem;
+    }
+  }
+
+  .card-wrapper {
+    display: none;
+    @include respond(lg) {
+      position: absolute;
+      width: 30rem;
+      height: 20rem;
+      left: 30%;
+      bottom: 40rem;
+      &.active {
+        display: block;
+      }
+    }
+  }
+
+  .credit-card-payment-form,
+  .paypal-link {
+    display: none;
+    &.active {
+      display: block;
+    }
+    .form__input.jp-card-invalid {
+      border-color: $danger-color;
+    }
+  }
+}

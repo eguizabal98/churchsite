@@ -1,0 +1,41 @@
+// ALL EVENTS ==================================== //
+.event {
+  color: $white-color;
+
+  &__link {
+    margin-top: $default-margin;
+  }
+  &__metas {
+    margin-bottom: 1.2rem;
+    &.horizontal {
+      display: flex;
+
+      .meta {
+        &:not(:last-child) {
+          margin-right: 0.4rem;
+          @include respond(md) {
+            margin-right: $default-margin;
+          }
+        }
+      }
+    }
+
+    &.vertical {
+      .meta {
+        font-size: $leading-font-size;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    .meta {
+      display: flex;
+      @include align-center;
+
+      i {
+        margin-right: 0.4rem;
+      }
+    }
+  }
+}
