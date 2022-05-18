@@ -14,8 +14,9 @@
     <title>Events | Greater Love Church</title>
 
     <!-- Place Custom Favicon here -->
-    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="images/favicon-cr.png" type="image/png">
 
+      <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
   </head>
 
@@ -27,125 +28,15 @@
 
     <!-- =================== SITE HEADER BEGINS ============================= -->
 
-    <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
-      data-onscroll-logo="images/logo-dark.png">
+    <div id="nav-placeholder">
 
-      <div class="container">
+    </div><!-- .container ends -->
 
-        <nav class="header__nav bottom-nav">
-
-          <div class="header__logo brand--logo">
-            <a href="index.html"><img src="images/logo-light.png" alt="Greater Love Church"></a>
-          </div>
-
-          <div class="header__mobile--opener hide-on-lg">
-            <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu"
-              data-toggle="mobile-menu">
-              <span class="line"></span>
-              <span class="line"></span>
-              <span class="line"></span>
-            </button>
-          </div>
-
-            <ul class="header__navitems show-on-lg" id="mobile-menu">
-
-                <!-- Contains donation button for mobile and tablet devices -->
-                <li class="header__extra">
-                    <div class="cta">
-                        <a href="donations.html" class="button button-block-sm">Donación</a>
-                    </div>
-                </li><!-- .header__extra ends -->
-
-                <li class="header__list active"><a href="index.html">Home</a></li>
-                <!-- .header__list ends -->
-
-                <li class="header__list"><a href="about.html">Conocenos</a></li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Sermones</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="sermons.html">Sermones</a></li>
-                            <li class="header__list"><a href="sermons-single.html">Sermones individuales</a></li>
-
-                        </ul>
-
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Ministerios</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="ministries.html">Ministerios</a></li>
-                            <li class="header__list"><a href="ministries-single.html">Detalle de Ministerios</a></li>
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Eventos</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="events.html">Eventos</a></li>
-                            <li class="header__list"><a href="events-single.html">Eventos individuales</a></li>
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Paginas</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="donations.html">Donaciones</a></li>
-                            <li class="header__list"><a href="staffs-single.html">Lideres</a></li>
-                            <!--                  <li class="header__list"><a href="elements.html">Elements</a></li>-->
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <!--            <li class="header__list">-->
-                <!--              <a href="" class="dropdown-link">Blog</a>-->
-
-                <!--              <div class="header__submenu">-->
-                <!--                <ul>-->
-
-                <!--                  <li class="header__list"><a href="blog.html">Blog list</a></li>-->
-                <!--                  <li class="header__list"><a href="blog-single.html">Blog single</a></li>-->
-
-                <!--                </ul>-->
-                <!--              </div>&lt;!&ndash; .header__submenu ends &ndash;&gt;-->
-                <!--            </li>&lt;!&ndash; .header__list ends &ndash;&gt;-->
-
-                <li class="header__list"><a href="contact.html">Contacto</a></li>
-                <!-- .header__list ends -->
-
-            </ul><!-- .header__navitems ends -->
-
-          <!-- Contains Shopping cart and donation button -->
-          <div class="header__extra desktop-version">
-            <div class="cta hide-on-sm show-on-lg">
-              <a href="donations.html" class="button">Donate</a>
-            </div>
-          </div><!-- .header__extra ends -->
-
-        </nav><!-- .header__nav ends -->
-
-      </div><!-- .container ends -->
-
-    </header><!-- .header ends -->
-
+    <script>
+        $.get("nav-bar.html", function(data){
+            $("#nav-placeholder").replaceWith(data);
+        });
+    </script>
     <!-- =================== SITE HEADER ENDS ============================= -->
 
 
@@ -449,55 +340,17 @@
       <!-- ALL EVENTS SECTION ENDS -->
 
 
-      <!-- TIME AND LOCATION STARTS -->
-      <section class="time-location background-lighter-gray">
-
-        <div class="container">
-
-          <div class="row">
-
-            <div class="flex-lg-6">
-
-              <div class="time-location__content default-section-spacing">
-
-                <div class="section-heading">
-                  <span>Time and location</span>
-                  <h2>Come and worship with us</h2>
-                </div><!-- .section-heading ends -->
-
-                <div class="time-location__time">
-
-                  <div class="info">
-                    <div class="day bold">Sunday:</div>
-                    <div class="time">
-                      <span>9:00 am - 10:30 am (Sunday school)</span>
-                      <span>11:00 am - 1:30 pm (Morning service)</span>
-                      <span>4:00 pm - 5:30 pm (Evening service)</span>
-                    </div>
-                  </div>
-
-                  <div class="info">
-                    <div class="location bold">Location:</div>
-                    <div class="location-info"><span>123 Jay St, Albany, NY 12203</span></div>
-                  </div>
-
-                </div><!-- .time-location__time ends -->
-
-              </div>
-
-            </div><!-- .flex-* ends -->
-
-          </div><!-- .row ends -->
+        <!-- TIME AND LOCATION STARTS -->
+        <div id="time-location-placeholder">
 
         </div><!-- .container ends -->
+        <!-- TIME AND LOCATION ENDS -->
 
-        <div class="time-location__map"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7743.437086630143!2d-89.56317718504171!3d13.97535152365951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e937acee99e5%3A0x729a22fb4b488678!2sTaller%20San%20Cristobals!5e0!3m2!1sen!2sus!4v1652658661540!5m2!1sen!2sus"
-            style="border:0;" allowfullscreen=""></iframe></div>
-
-
-      </section><!-- .time-location ends -->
-      <!-- TIME AND LOCATION ENDS -->
+        <script>
+            $.get("time-location.html", function(data){
+                $("#time-location-placeholder").replaceWith(data);
+            });
+        </script>
 
 
     </main><!-- main ends -->
@@ -514,52 +367,15 @@
 
     <footer class="footer">
 
-      <div class="container">
+        <div id="footer-placeholder">
 
-        <div class="footer__top display-flex justify-align-center">
+        </div><!-- .container ends -->
 
-          <div class="footer__logo">
-            <div class="logo-wrapper">
-              <img src="images/logo-sm.svg" alt="Small logo">
-            </div>
-          </div>
-
-        </div><!-- .footer__top ends -->
-
-        <div class="footer__bottom">
-
-          <div class="row align-items-center">
-
-            <div class="flex-md-6 flex-lg-4">
-
-              <div class="footer__info copyright">&copy; 2020 - Greater Love Church - All Rights Reserved</div>
-
-            </div><!-- .flex-* ends -->
-
-            <div class="flex-md-6 flex-lg-4">
-
-              <div class="footer__info credit">Template designed and developed by Blazythemes</div>
-
-            </div><!-- .flex-* ends -->
-
-            <div class="flex-md-6 flex-lg-4">
-
-              <div class="footer__info social">
-                <span>Follow us on social medias</span>
-                <div class="social__icons">
-                  <a href=""><i class="ri-facebook-line"></i></a>
-                  <a href=""><i class="ri-twitter-line"></i></a>
-                  <a href=""><i class="ri-linkedin-line"></i></a>
-                </div>
-              </div>
-
-            </div><!-- .flex-* ends -->
-
-          </div><!-- .row ends -->
-
-        </div><!-- .footer__top ends -->
-
-      </div><!-- .container ends -->
+        <script>
+            $.get("footer.html", function(data){
+                $("#footer-placeholder").replaceWith(data);
+            });
+        </script>
 
     </footer><!-- footer ends -->
 
