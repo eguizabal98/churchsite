@@ -16,6 +16,7 @@
     <!-- Place Custom Favicon here -->
     <link rel="shortcut icon" href="images/favicon.png" type="image/png">
 
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
 
 </head>
 
@@ -31,120 +32,18 @@
         data-onscroll-logo="images/logo-dark.svg">
 
     <div class="container">
+        <div id="nav-placeholder">
 
-        <nav class="header__nav bottom-nav">
-
-            <div class="header__logo brand--logo">
-                <a href="index.html"><img src="images/logo-light.svg" alt="Greater Love Church"></a>
-            </div>
-
-            <div class="header__mobile--opener hide-on-lg">
-                <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu"
-                        data-toggle="mobile-menu">
-                    <span class="line"></span>
-                    <span class="line"></span>
-                    <span class="line"></span>
-                </button>
-            </div>
-
-            <ul class="header__navitems show-on-lg" id="mobile-menu">
-
-                <!-- Contains donation button for mobile and tablet devices -->
-                <li class="header__extra">
-                    <div class="cta">
-                        <a href="donations.html" class="button button-block-sm">Donación</a>
-                    </div>
-                </li><!-- .header__extra ends -->
-
-                <li class="header__list active"><a href="index.html">Home</a></li>
-                <!-- .header__list ends -->
-
-                <li class="header__list"><a href="about.html">Conocenos</a></li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Sermones</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="sermons.html">Sermones</a></li>
-                            <li class="header__list"><a href="sermons-single.html">Sermones individuales</a></li>
-
-                        </ul>
-
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Ministerios</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="ministries.html">Ministerios</a></li>
-                            <li class="header__list"><a href="ministries-single.html">Detalle de Ministerios</a></li>
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Eventos</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="events.html">Eventos</a></li>
-                            <li class="header__list"><a href="events-single.html">Eventos individuales</a></li>
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <li class="header__list">
-                    <a href="" class="dropdown-link">Paginas</a>
-
-                    <div class="header__submenu">
-                        <ul>
-
-                            <li class="header__list"><a href="donations.html">Donaciones</a></li>
-                            <li class="header__list"><a href="staffs-single.html">Lideres</a></li>
-                            <!--                  <li class="header__list"><a href="elements.html">Elements</a></li>-->
-
-                        </ul>
-                    </div><!-- .header__submenu ends -->
-                </li><!-- .header__list ends -->
-
-                <!--            <li class="header__list">-->
-                <!--              <a href="" class="dropdown-link">Blog</a>-->
-
-                <!--              <div class="header__submenu">-->
-                <!--                <ul>-->
-
-                <!--                  <li class="header__list"><a href="blog.html">Blog list</a></li>-->
-                <!--                  <li class="header__list"><a href="blog-single.html">Blog single</a></li>-->
-
-                <!--                </ul>-->
-                <!--              </div>&lt;!&ndash; .header__submenu ends &ndash;&gt;-->
-                <!--            </li>&lt;!&ndash; .header__list ends &ndash;&gt;-->
-
-                <li class="header__list"><a href="contact.html">Contacto</a></li>
-                <!-- .header__list ends -->
-
-            </ul><!-- .header__navitems ends -->
-
-            <!-- Contains Shopping cart and donation button -->
-            <div class="header__extra desktop-version">
-                <div class="cta hide-on-sm show-on-lg">
-                    <a href="donations.html" class="button">Donación</a>
-                </div>
-            </div><!-- .header__extra ends -->
-
-        </nav><!-- .header__nav ends -->
-
+        </div><!-- .container ends -->
     </div><!-- .container ends -->
 
 </header><!-- .header ends -->
+
+<script>
+    $.get("nav-bar.html", function(data){
+        $("#nav-placeholder").replaceWith(data);
+    });
+</script>
 
 <!-- =================== SITE HEADER ENDS ============================= -->
 
