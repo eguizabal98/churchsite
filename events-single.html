@@ -246,55 +246,17 @@
       <!-- SINGLE EVENTS SECTION ENDS -->
 
 
-      <!-- TIME AND LOCATION STARTS -->
-      <section class="time-location background-lighter-gray">
-
-        <div class="container">
-
-          <div class="row">
-
-            <div class="flex-lg-6">
-
-              <div class="time-location__content default-section-spacing">
-
-                <div class="section-heading">
-                  <span>Time and location</span>
-                  <h2>Come and worship with us</h2>
-                </div><!-- .section-heading ends -->
-
-                <div class="time-location__time">
-
-                  <div class="info">
-                    <div class="day bold">Sunday:</div>
-                    <div class="time">
-                      <span>9:00 am - 10:30 am (Sunday school)</span>
-                      <span>11:00 am - 1:30 pm (Morning service)</span>
-                      <span>4:00 pm - 5:30 pm (Evening service)</span>
-                    </div>
-                  </div>
-
-                  <div class="info">
-                    <div class="location bold">Location:</div>
-                    <div class="location-info"><span>123 Jay St, Albany, NY 12203</span></div>
-                  </div>
-
-                </div><!-- .time-location__time ends -->
-
-              </div>
-
-            </div><!-- .flex-* ends -->
-
-          </div><!-- .row ends -->
+        <!-- TIME AND LOCATION STARTS -->
+        <div id="time-location-placeholder">
 
         </div><!-- .container ends -->
+        <!-- TIME AND LOCATION ENDS -->
 
-        <div class="time-location__map"><iframe
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7743.437086630143!2d-89.56317718504171!3d13.97535152365951!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8f62e937acee99e5%3A0x729a22fb4b488678!2sTaller%20San%20Cristobals!5e0!3m2!1sen!2sus!4v1652658661540!5m2!1sen!2sus"
-            style="border:0;" allowfullscreen=""></iframe></div>
-
-
-      </section><!-- .time-location ends -->
-      <!-- TIME AND LOCATION ENDS -->
+        <script>
+            $.get("time-location.html", function(data){
+                $("#time-location-placeholder").replaceWith(data);
+            });
+        </script>
 
 
     </main><!-- main ends -->
