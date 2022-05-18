@@ -808,52 +808,15 @@
 
 <footer class="footer">
 
-    <div class="container">
-
-        <div class="footer__top display-flex justify-align-center">
-
-            <div class="footer__logo">
-                <div class="logo-wrapper">
-                    <img src="images/logo-sm.svg" alt="Small logo">
-                </div>
-            </div>
-
-        </div><!-- .footer__top ends -->
-
-        <div class="footer__bottom">
-
-            <div class="row align-items-center">
-
-                <div class="flex-md-6 flex-lg-4">
-
-                    <div class="footer__info copyright">&copy; 2020 - Greater Love Church - All Rights Reserved</div>
-
-                </div><!-- .flex-* ends -->
-
-                <div class="flex-md-6 flex-lg-4">
-
-                    <div class="footer__info credit">Template designed and developed by Blazythemes</div>
-
-                </div><!-- .flex-* ends -->
-
-                <div class="flex-md-6 flex-lg-4">
-
-                    <div class="footer__info social">
-                        <span>Follow us on social medias</span>
-                        <div class="social__icons">
-                            <a href=""><i class="ri-facebook-line"></i></a>
-                            <a href=""><i class="ri-twitter-line"></i></a>
-                            <a href=""><i class="ri-linkedin-line"></i></a>
-                        </div>
-                    </div>
-
-                </div><!-- .flex-* ends -->
-
-            </div><!-- .row ends -->
-
-        </div><!-- .footer__top ends -->
+    <div id="footer-placeholder">
 
     </div><!-- .container ends -->
+
+    <script>
+        $.get("footer.html", function(data){
+            $("#footer-placeholder").replaceWith(data);
+        });
+    </script>
 
 </footer><!-- footer ends -->
 
