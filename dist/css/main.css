@@ -5536,3 +5536,13 @@ button[type="submit"].button--link:hover {
     border-right: 0.1rem solid #f5f5f5;
   }
 }
+
+.donations__message__flex{
+  width:100%;
+  display:flex;
+  justify-content: left;
+}
+.division{
+  width:30%;
+  float:left;
+}
