@@ -14,8 +14,7 @@ const createNav = () => {
             </div>
 
             <div class="header__mobile--opener hide-on-lg">
-                <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu"
-                        data-toggle="mobile-menu">
+                <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu" data-toggle="mobile-menu">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
@@ -131,18 +130,40 @@ createNav();
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
-            $('.brand--logo img').attr('src','images/logo-dark-cr.svg');
+            $('.brand--logo img').attr('src', 'images/logo-dark-cr.svg');
             const headers = document.querySelectorAll(".header");
             headers.forEach(function (current) {
                 current.className = "header transparent fixed light-text dark-text white-bg";
             });
         }
         if ($(this).scrollTop() < 200) {
-            $('.brand--logo img').attr('src','images/logo-light-cr.svg');
+            $('.brand--logo img').attr('src', 'images/logo-light-cr.svg');
             const headers = document.querySelectorAll(".header");
             headers.forEach(function (current) {
                 current.className = "header transparent fixed light-text";
             });
+        }
+    })
+
+    const headers = document.querySelectorAll(".header");
+    headers.forEach(function (current) {
+        let menuToggle = current.querySelector("[data-toggle]");
+        menuToggle.addEventListener("click", openMenu);
+        let menuMobile;
+
+        function openMenu() { // opens mobile menu
+
+
+            let menuToggleTarget = menuToggle.getAttribute("data-toggle");
+
+            const open = JSON.parse(menuToggle.getAttribute("aria-expanded")); // converts to boolean and returns true or false
+            menuToggle.setAttribute("aria-expanded", !open);
+
+            menuMobile = current.querySelector("#" + menuToggleTarget); // Gets the menu that needs to be display
+            menuMobile.classList.toggle("active"); // shows and hides the menu
+            menuToggle.classList.toggle("rotate"); // little animation for the hamburger icon
+
+            document.body.classList.toggle("overflow-hidden"); // prevent scrolling on the page while the menu is being shown
         }
     })
 });

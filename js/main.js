@@ -28,7 +28,7 @@ headers.forEach(function (current) {
         scrollLogo = current.getAttribute("data-onscroll-logo"), // Logo to show on scroll
         brandLogo = current.querySelector(".header__logo img"), // Gets the current logo img tag
         brandLogoUrl = current.querySelector(".header__logo img").getAttribute("src"), // Gets the current logo src
-        menuToggle = current.querySelector("[data-toggle]"), // Gets the element to toggle the naviagtion on mobile devices
+        // menuToggle = current.querySelector("[data-toggle]"), // Gets the element to toggle the naviagtion on mobile devices
         menuMobile, // Gets the menu for the mobile or submenu
         dropdownLink = current.querySelectorAll(".dropdown-link"), // Gets the dropdown links
         searchToggle = current.querySelector("[data-search]"), // Gets the element to toggle the search form
@@ -41,25 +41,6 @@ headers.forEach(function (current) {
         dropdownLink[i].addEventListener("click", function (e) {
             e.preventDefault();
         })
-    }
-
-    // Opening the mobile menu
-    if (menuToggle) menuToggle.addEventListener("click", openMenu);
-
-    // FUNCTIONS ======================== //
-    function openMenu() { // opens mobile menu
-
-
-        let menuToggleTarget = menuToggle.getAttribute("data-toggle");
-
-        const open = JSON.parse(menuToggle.getAttribute("aria-expanded")); // converts to boolean and returns true or false
-        menuToggle.setAttribute("aria-expanded", !open);
-
-        menuMobile = current.querySelector("#" + menuToggleTarget); // Gets the menu that needs to be display
-        menuMobile.classList.toggle("active"); // shows and hides the menu
-        menuToggle.classList.toggle("rotate"); // little animation for the hamburger icon
-
-        document.body.classList.toggle("overflow-hidden"); // prevent scrolling on the page while the menu is being shown
     }
 });
 
