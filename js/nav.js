@@ -154,7 +154,7 @@ const mobileAction = () => {
         let menuMobile;
 
         function openMenu() { // opens mobile menu
-
+            alert("Click")
             let menuToggleTarget = menuToggle.getAttribute("data-toggle");
 
             const open = JSON.parse(menuToggle.getAttribute("aria-expanded")); // converts to boolean and returns true or false
