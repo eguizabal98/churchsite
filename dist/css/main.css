@@ -4879,8 +4879,7 @@ button[type="submit"].button--link:hover {
 
 @media screen and (min-width: 56.3125em) {
   .our-ministries .card.custom-height {
-    height: calc(
- (50rem - 2rem) / 2);
+    height: calc((50rem - 2rem) / 2);
   }
 }
 
