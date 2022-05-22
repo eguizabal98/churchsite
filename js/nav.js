@@ -146,7 +146,7 @@ $(function () {
     })
 });
 
-const mobileAction = () => {
+$(function () {
     const headers = document.querySelectorAll(".header");
     headers.forEach(function (current) {
         let menuToggle = current.querySelector("[data-toggle]");
@@ -167,6 +167,4 @@ const mobileAction = () => {
             document.body.classList.toggle("overflow-hidden"); // prevent scrolling on the page while the menu is being shown
         }
     })
-}
-
-mobileAction()
+});
