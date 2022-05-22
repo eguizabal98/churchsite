@@ -14,7 +14,7 @@ const createNav = () => {
             </div>
 
             <div class="header__mobile--opener hide-on-lg">
-                <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu" data-toggle="mobile-menu">
+                <button class="header__mobile--icon" aria-expanded="false" aria-controls="mobile-menu" data-toggle-cr="mobile-menu-cr">
                     <span class="line"></span>
                     <span class="line"></span>
                     <span class="line"></span>
@@ -149,14 +149,14 @@ $(function () {
 const mobileAction = () => {
     const headers = document.querySelectorAll(".header");
     headers.forEach(function (current) {
-        let menuToggle = current.querySelector("[data-toggle]");
+        let menuToggle = current.querySelector("[data-toggle-cr]");
         menuToggle.addEventListener("click", openMenu);
         let menuMobile;
 
         function openMenu() { // opens mobile menu
 
 
-            let menuToggleTarget = menuToggle.getAttribute("data-toggle");
+            let menuToggleTarget = menuToggle.getAttribute("data-toggle-cr");
 
             const open = JSON.parse(menuToggle.getAttribute("aria-expanded")); // converts to boolean and returns true or false
             menuToggle.setAttribute("aria-expanded", !open);
@@ -169,5 +169,3 @@ const mobileAction = () => {
         }
     })
 }
-
-mobileAction();
