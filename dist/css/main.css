@@ -1585,6 +1585,19 @@ s {
   background-repeat: no-repeat;
 }
 
+.banner-donation {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  color: #ffffff;
+  height: 30rem;
+  padding-bottom: 2rem;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url("../../images/metro-metro.webp");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
 @media screen and (min-width: 87.5625em) {
   .banner {
     height: 40rem;
