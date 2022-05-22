@@ -144,7 +144,9 @@ $(function () {
             });
         }
     })
+});
 
+const mobileAction = () => {
     const headers = document.querySelectorAll(".header");
     headers.forEach(function (current) {
         let menuToggle = current.querySelector("[data-toggle]");
@@ -166,4 +168,6 @@ $(function () {
             document.body.classList.toggle("overflow-hidden"); // prevent scrolling on the page while the menu is being shown
         }
     })
-});
+}
+
+mobileAction();
