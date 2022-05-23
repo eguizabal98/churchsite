@@ -1,13 +1,13 @@
 /******/ (() => { // webpackBootstrap
 var __webpack_exports__ = {};
 const createNav = () => {
-    let nav = document.querySelector('.navbar');
+    let navCr = document.querySelector('.navbar');
 
     let title = document.querySelector('.title-cr');
 
     let titleName = title.getAttribute('navName')
 
-    nav.innerHTML = `
+    navCr.innerHTML = `
     <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
         data-onscroll-logo="images/logo-dark-cr.svg">
 
