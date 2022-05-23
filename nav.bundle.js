@@ -3,6 +3,10 @@ var __webpack_exports__ = {};
 const createNav = () => {
     let nav = document.querySelector('.navbar');
 
+    let title = document.querySelector('.title-cr');
+
+    let titleName = title.getAttribute('navName')
+
     nav.innerHTML = `
     <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
         data-onscroll-logo="images/logo-dark-cr.svg">
@@ -32,12 +36,12 @@ const createNav = () => {
                     </div>
                 </li><!-- .header__extra ends -->
 
-                <li class="header__list active"><a href="index.html">Home</a></li>
+                <li class = "header__list ${(titleName === "HOME") ? "active" : ""}"><a href="index.html">Home</a></li>
                 <!-- .header__list ends -->
 
-                <li class="header__list"><a href="about.html">Conocenos</a></li><!-- .header__list ends -->
+                <li class="header__list ${(titleName === "CONOCENOS") ? "active" : ""}"><a href="about.html">Conocenos</a></li><!-- .header__list ends -->
 
-                <li class="header__list"><a href="sermons.html">Sermones</a></li><!-- .header__list ends -->
+                <li class="header__list ${(titleName === "SERMONES") ? "active" : ""}"><a href="sermons.html">Sermones</a></li><!-- .header__list ends -->
 
 <!--                <li class="header__list">-->
 <!--                    <a href="" class="dropdown-link">Sermones</a>-->
@@ -53,7 +57,7 @@ const createNav = () => {
 <!--                    </div>&lt;!&ndash; .header__submenu ends &ndash;&gt;-->
 <!--                </li>&lt;!&ndash; .header__list ends &ndash;&gt;-->
 
-                <li class="header__list"><a href="ministries.html">Ministerios</a></li><!-- .header__list ends -->
+                <li class="header__list ${(titleName  === "MINISTERIOS") ? "active" : ""}"><a href="ministries.html">Ministerios</a></li><!-- .header__list ends -->
 
 <!--                <li class="header__list">-->
 <!--                    <a href="" class="dropdown-link">Ministerios</a>-->
@@ -108,7 +112,7 @@ const createNav = () => {
                 <!--              </div>&lt;!&ndash; .header__submenu ends &ndash;&gt;-->
                 <!--            </li>&lt;!&ndash; .header__list ends &ndash;&gt;-->
 
-                <li class="header__list"><a href="contact.html">Contacto</a></li>
+                <li class="header__list ${(titleName === "CONTACTO") ? "active" : ""}"><a href="contact.html">Contacto</a></li>
                 <!-- .header__list ends -->
 
             </ul><!-- .header__navitems ends -->
@@ -128,6 +132,16 @@ const createNav = () => {
 }
 
 createNav();
+
+$(function () {
+    if (document.documentElement.scrollTop > 200) {
+        $('.brand--logo img').attr('src', 'images/logo-dark-cr.svg');
+        const headers = document.querySelectorAll(".header");
+        headers.forEach(function (current) {
+            current.className = "header transparent fixed light-text dark-text white-bg";
+        });
+    }
+})
 
 $(function () {
     $(window).scroll(function () {
