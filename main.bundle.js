@@ -218,6 +218,14 @@ var donations = new Card({
     },
 });
 
+// const updateDate = () => {
+//     const date = new Date();
+//     let dayNum = date.getDay();
+//     alert(dayNum);
+//     console.log(dayNum)
+//     console.log("test ashdashd 8888")
+// }
+// updateDate();
 
 /******/ })()
 ;
