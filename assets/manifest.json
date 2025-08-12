@@ -1,14 +1,14 @@
 {
-  "name": "churchproject",
-  "short_name": "churchproject",
-  "description": "",
+  "name": "Iglesia Ciudadano del Cielo",
+  "short_name": "Ciudadano Cielo",
+  "description": "Sitio web oficial de la Iglesia Ciudadano del Cielo",
   "dir": "auto",
-  "lang": "en-US",
+  "lang": "es-ES",
   "display": "standalone",
   "orientation": "any",
   "start_url": "/?homescreen=1",
-  "background_color": "#fff",
-  "theme_color": "#fff",
+  "background_color": "#2c5aa0",
+  "theme_color": "#2c5aa0",
   "icons": [
     {
       "src": "android-chrome-36x36.png",
