@@ -1,0 +1,32 @@
+/* Custom logo sizing - 50% of original size */
+.header .header__logo {
+    width: 7.5rem !important; /* 50% of 15rem */
+}
+
+.header .header__logo a,
+.header .header__logo img {
+    height: 100%;
+    width: 100%;
+}
+
+/* Ensure logo maintains aspect ratio */
+.header .header__logo img {
+    object-fit: contain;
+}
+
+/* For page loader logo */
+.page-loader .loader img {
+    width: 50% !important;
+    height: auto !important;
+}
+
+/* Brand logo specific styling */
+.brand--logo {
+    width: 7.5rem !important;
+}
+
+.brand--logo img {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain;
+}

@@ -1,0 +1,656 @@
+{
+  "timestamp": "2025-08-11T20:40:25.904666",
+  "categories": {
+    "carousel": {
+      "patterns": [
+        "hero-1",
+        "hero-2",
+        "hero-3",
+        "carousel",
+        "slide"
+      ],
+      "description": "Carousel/Hero section background images",
+      "files": [
+        {
+          "filename": "hero-2.jpg",
+          "current_path": "backgrounds/hero-2.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/hero-2.jpg",
+          "size": 189417
+        },
+        {
+          "filename": "hero-3.jpg",
+          "current_path": "backgrounds/hero-3.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/hero-3.jpg",
+          "size": 189417
+        },
+        {
+          "filename": "hero-1.jpg",
+          "current_path": "backgrounds/hero-1.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/hero-1.jpg",
+          "size": 211435
+        }
+      ]
+    },
+    "backgrounds": {
+      "patterns": [
+        "background",
+        "banner",
+        "bg-"
+      ],
+      "description": "General background images",
+      "files": [
+        {
+          "filename": "404.jpg",
+          "current_path": "backgrounds/404.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/404.jpg",
+          "size": 102658
+        },
+        {
+          "filename": "banner.jpg",
+          "current_path": "backgrounds/banner.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/banner.jpg",
+          "size": 154560
+        },
+        {
+          "filename": "background-6.jpg",
+          "current_path": "backgrounds/background-6.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/background-6.jpg",
+          "size": 98104
+        },
+        {
+          "filename": "background-2.jpg",
+          "current_path": "backgrounds/background-2.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/background-2.jpg",
+          "size": 155513
+        },
+        {
+          "filename": "background-1.jpg",
+          "current_path": "backgrounds/background-1.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/backgrounds/background-1.jpg",
+          "size": 163016
+        }
+      ]
+    },
+    "logos": {
+      "patterns": [
+        "logo",
+        "brand"
+      ],
+      "description": "Logo and branding images",
+      "files": [
+        {
+          "filename": "Bac_credomatic_logo.png",
+          "current_path": "payments/Bac_credomatic_logo.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/payments/Bac_credomatic_logo.png",
+          "size": 67409
+        },
+        {
+          "filename": "Bac_credomatic_logo.svg",
+          "current_path": "payments/Bac_credomatic_logo.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/payments/Bac_credomatic_logo.svg",
+          "size": 21378
+        },
+        {
+          "filename": "logo-light-cr.svg",
+          "current_path": "logos/logo-light-cr.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-light-cr.svg",
+          "size": 36506
+        },
+        {
+          "filename": "logo-dark-cr.svg",
+          "current_path": "logos/logo-dark-cr.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-dark-cr.svg",
+          "size": 42426
+        },
+        {
+          "filename": "logo-light-cr.webp",
+          "current_path": "logos/logo-light-cr.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-light-cr.webp",
+          "size": 24600
+        },
+        {
+          "filename": "logo-dark.svg",
+          "current_path": "logos/logo-dark.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-dark.svg",
+          "size": 42426
+        },
+        {
+          "filename": "logo-light.svg",
+          "current_path": "logos/logo-light.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-light.svg",
+          "size": 36506
+        },
+        {
+          "filename": "logo-sm.svg",
+          "current_path": "logos/logo-sm.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-sm.svg",
+          "size": 36506
+        },
+        {
+          "filename": "logo-dark-cr.webp",
+          "current_path": "logos/logo-dark-cr.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-dark-cr.webp",
+          "size": 159942
+        },
+        {
+          "filename": "logo-sm.png",
+          "current_path": "logos/logo-sm.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/logos/logo-sm.png",
+          "size": 2108
+        }
+      ]
+    },
+    "favicons": {
+      "patterns": [
+        "favicon",
+        "icon",
+        "apple-touch"
+      ],
+      "description": "Favicon and app icons",
+      "files": [
+        {
+          "filename": "favicon-16x16.png",
+          "current_path": "favicons/favicon-16x16.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-16x16.png",
+          "size": 636
+        },
+        {
+          "filename": "mstile-310x310.png",
+          "current_path": "favicons/mstile-310x310.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/mstile-310x310.png",
+          "size": 12950
+        },
+        {
+          "filename": "android-chrome-384x384.png",
+          "current_path": "favicons/android-chrome-384x384.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-384x384.png",
+          "size": 15768
+        },
+        {
+          "filename": "apple-touch-icon-120x120.png",
+          "current_path": "favicons/apple-touch-icon-120x120.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/apple-touch-icon-120x120.png",
+          "size": 4474
+        },
+        {
+          "filename": "android-chrome-256x256.png",
+          "current_path": "favicons/android-chrome-256x256.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-256x256.png",
+          "size": 9796
+        },
+        {
+          "filename": "mstile-70x70.png",
+          "current_path": "favicons/mstile-70x70.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/mstile-70x70.png",
+          "size": 2520
+        },
+        {
+          "filename": "apple-touch-icon-152x152.png",
+          "current_path": "favicons/apple-touch-icon-152x152.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/apple-touch-icon-152x152.png",
+          "size": 5680
+        },
+        {
+          "filename": "apple-touch-icon-180x180.png",
+          "current_path": "favicons/apple-touch-icon-180x180.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/apple-touch-icon-180x180.png",
+          "size": 6901
+        },
+        {
+          "filename": "favicon-48x48.png",
+          "current_path": "favicons/favicon-48x48.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-48x48.png",
+          "size": 1617
+        },
+        {
+          "filename": "mstile-310x150.png",
+          "current_path": "favicons/mstile-310x150.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/mstile-310x150.png",
+          "size": 12950
+        },
+        {
+          "filename": "android-chrome-512x512.png",
+          "current_path": "favicons/android-chrome-512x512.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-512x512.png",
+          "size": 22676
+        },
+        {
+          "filename": "favicon-96x96.png",
+          "current_path": "favicons/favicon-96x96.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-96x96.png",
+          "size": 3291
+        },
+        {
+          "filename": "firefox_app_512x512.png",
+          "current_path": "favicons/firefox_app_512x512.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/firefox_app_512x512.png",
+          "size": 22676
+        },
+        {
+          "filename": "favicon-cr.png",
+          "current_path": "favicons/favicon-cr.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-cr.png",
+          "size": 1045
+        },
+        {
+          "filename": "mstile-150x150.png",
+          "current_path": "favicons/mstile-150x150.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/mstile-150x150.png",
+          "size": 5777
+        },
+        {
+          "filename": "android-chrome-36x36.png",
+          "current_path": "favicons/android-chrome-36x36.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-36x36.png",
+          "size": 1363
+        },
+        {
+          "filename": "favicon-192x192.png",
+          "current_path": "favicons/favicon-192x192.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-192x192.png",
+          "size": 6855
+        },
+        {
+          "filename": "android-chrome-72x72.png",
+          "current_path": "favicons/android-chrome-72x72.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-72x72.png",
+          "size": 2564
+        },
+        {
+          "filename": "favicon-church.svg",
+          "current_path": "favicons/favicon-church.svg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-church.svg",
+          "size": 917
+        },
+        {
+          "filename": "yandex-browser-50x50.png",
+          "current_path": "favicons/yandex-browser-50x50.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/yandex-browser-50x50.png",
+          "size": 1910
+        },
+        {
+          "filename": "android-chrome-48x48.png",
+          "current_path": "favicons/android-chrome-48x48.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-48x48.png",
+          "size": 1617
+        },
+        {
+          "filename": "favicon-32x32.png",
+          "current_path": "favicons/favicon-32x32.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/favicon-32x32.png",
+          "size": 1045
+        },
+        {
+          "filename": "firefox_app_128x128.png",
+          "current_path": "favicons/firefox_app_128x128.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/firefox_app_128x128.png",
+          "size": 4332
+        },
+        {
+          "filename": "firefox_app_60x60.png",
+          "current_path": "favicons/firefox_app_60x60.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/firefox_app_60x60.png",
+          "size": 2155
+        },
+        {
+          "filename": "android-chrome-144x144.png",
+          "current_path": "favicons/android-chrome-144x144.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/favicons/android-chrome-144x144.png",
+          "size": 5138
+        }
+      ]
+    },
+    "content": {
+      "patterns": [
+        "ministry",
+        "sermon",
+        "gallery",
+        "staff",
+        "event"
+      ],
+      "description": "Content images (ministries, sermons, gallery, etc.)",
+      "files": [
+        {
+          "filename": "ministry-wommens-2.webp",
+          "current_path": "content/ministries/ministry-wommens-2.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-wommens-2.webp",
+          "size": 42508
+        },
+        {
+          "filename": "ministry-wommens.webp",
+          "current_path": "content/ministries/ministry-wommens.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-wommens.webp",
+          "size": 85538
+        },
+        {
+          "filename": "ministry-5@1.5x.jpg",
+          "current_path": "content/ministries/ministry-5@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-5@1.5x.jpg",
+          "size": 116690
+        },
+        {
+          "filename": "ministry-4@1.5x.webp",
+          "current_path": "content/ministries/ministry-4@1.5x.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-4@1.5x.webp",
+          "size": 64598
+        },
+        {
+          "filename": "ministry-1@1.5x.jpeg",
+          "current_path": "content/ministries/ministry-1@1.5x.jpeg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-1@1.5x.jpeg",
+          "size": 29904
+        },
+        {
+          "filename": "ministry-6@1.5x.jpg",
+          "current_path": "content/ministries/ministry-6@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-6@1.5x.jpg",
+          "size": 44557
+        },
+        {
+          "filename": "ministry-3@1.5x.webp",
+          "current_path": "content/ministries/ministry-3@1.5x.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/ministry-3@1.5x.webp",
+          "size": 17120
+        },
+        {
+          "filename": "sermon-1@1.5x.jpg",
+          "current_path": "content/sermons/sermon-1@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-1@1.5x.jpg",
+          "size": 132908
+        },
+        {
+          "filename": "sermon-1@2x.jpg",
+          "current_path": "content/sermons/sermon-1@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-1@2x.jpg",
+          "size": 210898
+        },
+        {
+          "filename": "sermon-6@1.5x.jpg",
+          "current_path": "content/sermons/sermon-6@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-6@1.5x.jpg",
+          "size": 109991
+        },
+        {
+          "filename": "sermon-3@1.5x.jpg",
+          "current_path": "content/sermons/sermon-3@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-3@1.5x.jpg",
+          "size": 91174
+        },
+        {
+          "filename": "sermon-2@1.5x.jpg",
+          "current_path": "content/sermons/sermon-2@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-2@1.5x.jpg",
+          "size": 142479
+        },
+        {
+          "filename": "sermon-4@1.5x.jpg",
+          "current_path": "content/sermons/sermon-4@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-4@1.5x.jpg",
+          "size": 219081
+        },
+        {
+          "filename": "sermon-5@1.5x.jpg",
+          "current_path": "content/sermons/sermon-5@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/sermons/sermon-5@1.5x.jpg",
+          "size": 107948
+        },
+        {
+          "filename": "gallery-3@2x.jpg",
+          "current_path": "content/gallery/gallery-3@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-3@2x.jpg",
+          "size": 90996
+        },
+        {
+          "filename": "gallery-1@2x.jpg",
+          "current_path": "content/gallery/gallery-1@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-1@2x.jpg",
+          "size": 102600
+        },
+        {
+          "filename": "gallery-7@1.5x.jpg",
+          "current_path": "content/gallery/gallery-7@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-7@1.5x.jpg",
+          "size": 60072
+        },
+        {
+          "filename": "gallery-6@1.5x.jpg",
+          "current_path": "content/gallery/gallery-6@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-6@1.5x.jpg",
+          "size": 91472
+        },
+        {
+          "filename": "gallery-5@2x.jpg",
+          "current_path": "content/gallery/gallery-5@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-5@2x.jpg",
+          "size": 92586
+        },
+        {
+          "filename": "gallery-1@1.5x.jpg",
+          "current_path": "content/gallery/gallery-1@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-1@1.5x.jpg",
+          "size": 65015
+        },
+        {
+          "filename": "gallery-7@2x.jpg",
+          "current_path": "content/gallery/gallery-7@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-7@2x.jpg",
+          "size": 104881
+        },
+        {
+          "filename": "gallery-4@1.5x.jpg",
+          "current_path": "content/gallery/gallery-4@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-4@1.5x.jpg",
+          "size": 101317
+        },
+        {
+          "filename": "gallery-5@1.5x.jpg",
+          "current_path": "content/gallery/gallery-5@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-5@1.5x.jpg",
+          "size": 55070
+        },
+        {
+          "filename": "gallery-2@2x.jpg",
+          "current_path": "content/gallery/gallery-2@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-2@2x.jpg",
+          "size": 72422
+        },
+        {
+          "filename": "gallery-8@2x.jpg",
+          "current_path": "content/gallery/gallery-8@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-8@2x.jpg",
+          "size": 121475
+        },
+        {
+          "filename": "gallery-4@2x.jpg",
+          "current_path": "content/gallery/gallery-4@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-4@2x.jpg",
+          "size": 161941
+        },
+        {
+          "filename": "gallery-6@2x.jpg",
+          "current_path": "content/gallery/gallery-6@2x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-6@2x.jpg",
+          "size": 149648
+        },
+        {
+          "filename": "gallery-3@1.5x.jpg",
+          "current_path": "content/gallery/gallery-3@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-3@1.5x.jpg",
+          "size": 56092
+        },
+        {
+          "filename": "gallery-2@1.5x.jpg",
+          "current_path": "content/gallery/gallery-2@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-2@1.5x.jpg",
+          "size": 46182
+        },
+        {
+          "filename": "metro-metro.webp",
+          "current_path": "content/gallery/metro-metro.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/metro-metro.webp",
+          "size": 70482
+        },
+        {
+          "filename": "gallery-8@1.5x.jpg",
+          "current_path": "content/gallery/gallery-8@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/gallery/gallery-8@1.5x.jpg",
+          "size": 76475
+        },
+        {
+          "filename": "staff-1@1.5x.jpg",
+          "current_path": "content/staff/staff-1@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-1@1.5x.jpg",
+          "size": 84918
+        },
+        {
+          "filename": "staff-6@1.5x.jpg",
+          "current_path": "content/staff/staff-6@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-6@1.5x.jpg",
+          "size": 226093
+        },
+        {
+          "filename": "staff-2@1.5x.jpg",
+          "current_path": "content/staff/staff-2@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-2@1.5x.jpg",
+          "size": 123863
+        },
+        {
+          "filename": "staff-3@1.5x.jpg",
+          "current_path": "content/staff/staff-3@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-3@1.5x.jpg",
+          "size": 86443
+        },
+        {
+          "filename": "pastor@1.5x.jpg",
+          "current_path": "content/staff/pastor@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/pastor@1.5x.jpg",
+          "size": 144470
+        },
+        {
+          "filename": "user-1.jpg",
+          "current_path": "content/staff/user-1.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/user-1.jpg",
+          "size": 6616
+        },
+        {
+          "filename": "user-3.jpg",
+          "current_path": "content/staff/user-3.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/user-3.jpg",
+          "size": 7421
+        },
+        {
+          "filename": "staff-5@1.5x.jpg",
+          "current_path": "content/staff/staff-5@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-5@1.5x.jpg",
+          "size": 95003
+        },
+        {
+          "filename": "staff-4@1.5x.jpg",
+          "current_path": "content/staff/staff-4@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/staff-4@1.5x.jpg",
+          "size": 73881
+        },
+        {
+          "filename": "user-2.jpg",
+          "current_path": "content/staff/user-2.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/staff/user-2.jpg",
+          "size": 11458
+        },
+        {
+          "filename": "event-2@1.5x.jpg",
+          "current_path": "content/events/event-2@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/events/event-2@1.5x.jpg",
+          "size": 202137
+        },
+        {
+          "filename": "event-3@1.5x.jpg",
+          "current_path": "content/events/event-3@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/events/event-3@1.5x.jpg",
+          "size": 137421
+        },
+        {
+          "filename": "event-1@1.5x.jpg",
+          "current_path": "content/events/event-1@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/events/event-1@1.5x.jpg",
+          "size": 144256
+        }
+      ]
+    },
+    "ui": {
+      "patterns": [
+        "ui-",
+        "button",
+        "arrow",
+        "social"
+      ],
+      "description": "UI elements and icons",
+      "files": []
+    },
+    "payments": {
+      "patterns": [
+        "payment",
+        "donate",
+        "bank",
+        "card"
+      ],
+      "description": "Payment and donation related images",
+      "files": []
+    },
+    "uncategorized": {
+      "patterns": [],
+      "description": "Images that don't fit other categories",
+      "files": [
+        {
+          "filename": "loading.gif",
+          "current_path": "ui/loading.gif",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/ui/loading.gif",
+          "size": 8476
+        },
+        {
+          "filename": "next.png",
+          "current_path": "ui/next.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/ui/next.png",
+          "size": 1350
+        },
+        {
+          "filename": "prev.png",
+          "current_path": "ui/prev.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/ui/prev.png",
+          "size": 1360
+        },
+        {
+          "filename": "close.png",
+          "current_path": "ui/close.png",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/ui/close.png",
+          "size": 280
+        },
+        {
+          "filename": "multimedia-ministerio.webp",
+          "current_path": "content/ministries/multimedia-ministerio.webp",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/ministries/multimedia-ministerio.webp",
+          "size": 46362
+        },
+        {
+          "filename": "post-2@1.5x.jpg",
+          "current_path": "content/posts/post-2@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/posts/post-2@1.5x.jpg",
+          "size": 104563
+        },
+        {
+          "filename": "single.jpeg",
+          "current_path": "content/posts/single.jpeg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/posts/single.jpeg",
+          "size": 58075
+        },
+        {
+          "filename": "post-1@1.5x.jpg",
+          "current_path": "content/posts/post-1@1.5x.jpg",
+          "full_path": "/Users/eliaseguizabal/CascadeProjects/churchsite/images/content/posts/post-1@1.5x.jpg",
+          "size": 86818
+        }
+      ]
+    }
+  },
+  "moved_files": [],
+  "issues": []
+}

@@ -9,14 +9,14 @@ const createNav = () => {
 
     navCr.innerHTML = `
     <header class="header transparent fixed light-text" data-onscroll-classes="dark-text white-bg"
-        data-onscroll-logo="images/logo-dark-cr.svg">
+        data-onscroll-logo="images/logos/logo-dark-cr.svg">
 
     <div class="container">
         <nav class="header__nav bottom-nav">
 
             <div class="header__logo brand--logo">
                 <br>
-                <a href="index.html"><img src="images/logo-light-cr.svg" alt="Greater Love Church"></a>
+                <a href="index.html"><img src="images/logos/logo-light-cr.svg" alt="Greater Love Church"></a>
             </div>
 
             <div class="header__mobile--opener hide-on-lg">
@@ -135,7 +135,7 @@ createNav();
 
 $(function () {
     if (document.documentElement.scrollTop > 200) {
-        $('.brand--logo img').attr('src', 'images/logo-dark-cr.svg');
+        $('.brand--logo img').attr('src', 'images/logos/logo-dark-cr.svg');
         const headers = document.querySelectorAll(".header");
         headers.forEach(function (current) {
             current.className = "header transparent fixed light-text dark-text white-bg";
@@ -146,14 +146,14 @@ $(function () {
 $(function () {
     $(window).scroll(function () {
         if ($(this).scrollTop() > 200) {
-            $('.brand--logo img').attr('src', 'images/logo-dark-cr.svg');
+            $('.brand--logo img').attr('src', 'images/logos/logo-dark-cr.svg');
             const headers = document.querySelectorAll(".header");
             headers.forEach(function (current) {
                 current.className = "header transparent fixed light-text dark-text white-bg";
             });
         }
         if ($(this).scrollTop() < 200) {
-            $('.brand--logo img').attr('src', 'images/logo-light-cr.svg');
+            $('.brand--logo img').attr('src', 'images/logos/logo-light-cr.svg');
             const headers = document.querySelectorAll(".header");
             headers.forEach(function (current) {
                 current.className = "header transparent fixed light-text";
